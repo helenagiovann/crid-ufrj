@@ -1,13 +1,24 @@
-# Sample Hardhat Project
+# CRID-UFRJ: Sistema de Registro Acadêmico em Solidity
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+Este repositório contém o código-fonte do projeto CRID-UFRJ, um protótipo de sistema de registro acadêmico descentralizado desenvolvido como parte da disciplina de Programação Avançada da UFRJ.
 
-Try running some of the following tasks:
+## Sobre o Projeto
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+O projeto implementa um smart contract na plataforma Ethereum utilizando a linguagem Solidity. Ele permite a criação de disciplinas, a matrícula de alunos e o lançamento de notas, com um sistema de permissões baseado em papéis (Administrador e Professor).
+
+O objetivo é demonstrar a viabilidade da tecnologia blockchain para criar registros acadêmicos mais seguros, transparentes e imutáveis.
+
+## Estrutura do Projeto
+
+- **/contracts**: Contém o smart contract principal (`CRID.sol`).
+- **/test**: Contém os testes unitários para o contrato (`CRID.test.js`).
+- **/scripts**: Contém um script de interação (`interact.js`) para demonstrar o uso do contrato.
+- **hardhat.config.js**: Arquivo de configuração do Hardhat.
+- **.github/workflows/ci.yml**: Arquivo do pipeline de Integração Contínua (CI) com GitHub Actions, que executa os testes automaticamente.
+
+## Como Executar
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone https://github.com/helenagiovann/crid-ufrj.git
+   cd crid-ufrj
