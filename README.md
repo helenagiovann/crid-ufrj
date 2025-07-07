@@ -22,3 +22,15 @@ O objetivo é demonstrar a viabilidade da tecnologia blockchain para criar regis
    ```bash
    git clone https://github.com/helenagiovann/crid-ufrj.git
    cd crid-ufrj
+
+2. **Instale todas as dependências do projeto:**
+   ```bash
+   npm install
+
+3. **Compile os contratos (opcional, `test` já faz isso):**
+   ```bash
+   npx hardhat compile
+
+4. **Execute a suíte de testes para validar a lógica:**
+   ```bash
+   npx hardhat test
